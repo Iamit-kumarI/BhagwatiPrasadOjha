@@ -1,0 +1,369 @@
+/* Academics.css */
+
+:root {
+  --primary: #0f172a;
+  --secondary: #2563eb;
+
+  --light-blue: #eff6ff;
+  --soft-blue: #dbeafe;
+
+  --white: #ffffff;
+
+  --text-dark: #0f172a;
+  --text-mid: #334155;
+  --text-light: #64748b;
+
+  --border:
+    rgba(37, 99, 235, 0.14);
+
+  --gold: #fbbf24;
+}
+
+/* SECTION */
+
+.curriculum-section {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 90px 40px;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(59, 130, 246, 0.12),
+      transparent 28%
+    ),
+
+    radial-gradient(
+      circle at bottom right,
+      rgba(37, 99, 235, 0.1),
+      transparent 30%
+    ),
+
+    linear-gradient(
+      135deg,
+      #f8fbff 0%,
+      #eef4ff 50%,
+      #f4f8ff 100%
+    );
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+/* SECTION TAG */
+
+.section-tag {
+  display: inline-block;
+
+  background:
+    rgba(37, 99, 235, 0.08);
+
+  color: #2563eb;
+
+  border:
+    1px solid
+    rgba(37, 99, 235, 0.12);
+
+  padding: 6px 14px;
+
+  border-radius: 100px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 18px;
+}
+
+/* TITLE */
+
+.section-title {
+  font-size:
+    clamp(30px, 5vw, 44px);
+
+  color: var(--primary);
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  margin-bottom: 16px;
+}
+
+/* SUBTEXT */
+
+.section-sub {
+  max-width: 620px;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: var(--text-light);
+
+  margin-bottom: 60px;
+}
+
+/* GRID */
+
+.class-cards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(280px, 1fr)
+    );
+
+  gap: 28px;
+}
+
+/* CARD */
+
+.class-card {
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #f8fbff
+    );
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+
+  box-shadow:
+    0 10px 28px
+    rgba(15, 23, 42, 0.06);
+
+  backdrop-filter: blur(10px);
+}
+
+.class-card:hover {
+  transform:
+    translateY(-8px);
+
+  border-color:
+    rgba(37, 99, 235, 0.26);
+
+  box-shadow:
+    0 24px 50px
+    rgba(37, 99, 235, 0.16);
+}
+
+/* CARD HEADER */
+
+.class-card-header {
+  padding: 28px 24px 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37, 99, 235, 0.12),
+      rgba(96, 165, 250, 0.05)
+    );
+
+  border-bottom:
+    1px solid
+    rgba(37, 99, 235, 0.1);
+}
+
+/* CLASS RANGE */
+
+.class-range {
+  display: inline-block;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #3b82f6
+    );
+
+  color: white;
+
+  padding: 6px 13px;
+
+  border-radius: 100px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 14px;
+
+  box-shadow:
+    0 8px 20px
+    rgba(37, 99, 235, 0.24);
+}
+
+/* CARD TITLE */
+
+.class-card-header h3 {
+  font-size: 22px;
+
+  font-weight: 700;
+
+  color: var(--text-dark);
+
+  margin-bottom: 5px;
+}
+
+/* CARD SUBTITLE */
+
+.class-card-header p {
+  font-size: 13px;
+
+  color: var(--text-light);
+}
+
+/* CARD BODY */
+
+.class-card-body {
+  padding: 24px;
+}
+
+/* DESCRIPTION */
+
+.card-description {
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: var(--text-light);
+
+  margin-bottom: 18px;
+}
+
+/* SUBJECT TAGS */
+
+.class-subjects {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 14px;
+}
+
+.subject-tag {
+  background:
+    rgba(37, 99, 235, 0.08);
+
+  border:
+    1px solid
+    rgba(37, 99, 235, 0.14);
+
+  color: #1d4ed8;
+
+  padding: 5px 12px;
+
+  border-radius: 8px;
+
+  font-size: 11.5px;
+
+  font-weight: 600;
+}
+
+/* STREAMS */
+
+.stream-list {
+  list-style: none;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.stream-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  color: var(--text-mid);
+}
+
+.stream-item strong {
+  color: var(--primary);
+
+  font-weight: 600;
+}
+
+/* DOTS */
+
+.stream-dot {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+}
+
+.dot-math {
+  background: #2563eb;
+}
+
+.dot-arts {
+  background: #fbbf24;
+}
+
+.dot-sci {
+  background: #22c55e;
+}
+
+.dot-bio {
+  background: #8b5cf6;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .curriculum-section {
+    padding: 70px 20px;
+  }
+
+  .section-sub {
+    font-size: 15px;
+  }
+
+  .class-card-header h3 {
+    font-size: 19px;
+  }
+
+  .class-card {
+    border-radius: 20px;
+  }
+}

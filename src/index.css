@@ -1,0 +1,10 @@
+:root {
+  --navy: #0a1628;
+  --gold2: #e6b84a;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  background: #faf6ee;
+}

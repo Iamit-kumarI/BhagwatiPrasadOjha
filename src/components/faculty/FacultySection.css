@@ -1,0 +1,324 @@
+/* Faculty.css */
+
+:root {
+  --primary: #0f172a;
+  --secondary: #1e3a8a;
+
+  --light-bg: #f8fbff;
+  --white: #ffffff;
+
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+
+  --border:
+    rgba(37, 99, 235, 0.12);
+
+  --gold: #fbbf24;
+}
+
+/* SECTION */
+
+.teachers-section {
+  background: var(--light-bg);
+
+  padding: 88px 40px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+/* SECTION HEADER */
+
+.section-tag {
+  display: inline-block;
+
+  background:
+    rgba(37, 99, 235, 0.08);
+
+  color: #2563eb;
+
+  font-size: 11.5px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  padding: 6px 14px;
+
+  border-radius: 100px;
+
+  margin-bottom: 16px;
+
+  border:
+    1px solid
+    rgba(37, 99, 235, 0.12);
+}
+
+.section-title {
+  font-size:
+    clamp(28px, 4vw, 42px);
+
+  color: var(--primary);
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  margin-bottom: 14px;
+}
+
+.section-sub {
+  font-size: 16px;
+
+  color: var(--text-light);
+
+  line-height: 1.8;
+
+  max-width: 580px;
+
+  margin-bottom: 56px;
+}
+
+/* BANNER */
+
+.teacher-banner {
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a 0%,
+      #172554 60%,
+      #1e3a8a 100%
+    );
+
+  border-radius: 24px;
+
+  padding: 50px;
+
+  display: flex;
+
+  gap: 48px;
+
+  align-items: center;
+
+  position: relative;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 18px 45px
+    rgba(15, 23, 42, 0.15);
+}
+
+.teacher-banner::before {
+  content: "";
+
+  position: absolute;
+
+  right: -70px;
+  top: -70px;
+
+  width: 320px;
+  height: 320px;
+
+  border-radius: 50%;
+
+  border:
+    60px solid
+    rgba(255, 255, 255, 0.04);
+}
+
+/* ICON */
+
+.teacher-banner-icon {
+  width: 90px;
+  height: 90px;
+
+  border-radius: 24px;
+
+  background:
+    rgba(255, 255, 255, 0.1);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.18);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 40px;
+
+  flex-shrink: 0;
+
+  position: relative;
+  z-index: 2;
+
+  backdrop-filter: blur(10px);
+}
+
+/* CONTENT */
+
+.teacher-banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.teacher-banner-content h3 {
+  font-size: 28px;
+
+  color: white;
+
+  margin-bottom: 12px;
+}
+
+.teacher-banner-content p {
+  color:
+    rgba(255, 255, 255, 0.78);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  max-width: 520px;
+}
+
+/* BADGE */
+
+.prayagraj-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  background:
+    rgba(255, 255, 255, 0.1);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.18);
+
+  border-radius: 100px;
+
+  padding: 6px 14px;
+
+  font-size: 12px;
+
+  color: #fbbf24;
+
+  margin-top: 16px;
+
+  font-weight: 500;
+
+  backdrop-filter: blur(10px);
+}
+
+/* GRID */
+
+.faculty-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(220px, 1fr)
+    );
+
+  gap: 22px;
+
+  margin-top: 30px;
+}
+
+/* CARD */
+
+.faculty-card {
+  background: var(--white);
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 18px;
+
+  padding: 24px;
+
+  transition:
+    all 0.3s ease;
+
+  box-shadow:
+    0 6px 18px
+    rgba(15, 23, 42, 0.04);
+}
+
+.faculty-card:hover {
+  transform: translateY(-6px);
+
+  border-color:
+    rgba(37, 99, 235, 0.22);
+
+  box-shadow:
+    0 16px 35px
+    rgba(37, 99, 235, 0.12);
+}
+
+/* ICON */
+
+.faculty-icon {
+  font-size: 30px;
+
+  margin-bottom: 14px;
+}
+
+/* TEXT */
+
+.faculty-card h4 {
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: var(--text-dark);
+
+  margin-bottom: 8px;
+}
+
+.faculty-card p {
+  font-size: 13.5px;
+
+  color: var(--text-light);
+
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .teachers-section {
+    padding: 70px 20px;
+  }
+
+  .teacher-banner {
+    flex-direction: column;
+
+    gap: 24px;
+
+    padding: 34px 24px;
+
+    text-align: center;
+  }
+
+  .teacher-banner-content h3 {
+    font-size: 24px;
+  }
+
+  .section-sub {
+    font-size: 15px;
+  }
+}
